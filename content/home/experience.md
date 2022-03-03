@@ -18,36 +18,75 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  title = "Data Analyst"
+  company = "BlaBlaCar Daily"
+  company_url = "https://blablacardaily.com/"
+  location = "Paris, France"
+  date_start = "2019-10-01"
   date_end = ""
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Building ETL's and maintain data warehouse
+  * Build dashboard and provide in-depth analysis
+  * Explore machine learning solutions and improve processes
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Data Analyst"
+  company = "Meep"
+  company_url = "https://meep.me/"
+  location = "Madrid, Spain"
+  date_start = "2019-01-01"
+  date_end = "2019-10-01"
+  description = """First data analysis in a team of <10 people in a emerging mobility startup. Collaboration with software engineers to build the first data pipeline, creation of the data warehouse and set up of the dashboard to support top management's decision."""
 
 [[experience]]
-  title = "Professor"
-  company = "University Y"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = "2016-12-30"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Data Analyst"
+  company = "Bloom Consulting"
+  company_url = "https://www.bloom-consulting.com/"
+  location = "Madrid, Spain"
+  date_start = "2018-11-01"
+  date_end = "2019-01-01"
+  description = """Internship - Participation to the data creation and analysis (mainly survey and google search data) to understand the the image of several countries. Maintenanace of online dashboards available to country officials. """
+
+
+[[experience]]
+  title = "Data Analyst"
+  company = "Dalberg Data Insight"
+  company_url = "https://dalberg.com/what-we-do/dalberg-data-insights/"
+  location = "Brussels, Belgium"
+  date_start = "2017-08-01"
+  date_end = "2017-10-01"
+  description = """Internship - Transformation of raw data (mostly mobile phone and EV charging station) and building of dashboards to support the decision of government and city officals in Africa, Central America and Europe"""
   
+
+  
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+  
+  # Background color.
+  # color = "navy"
+  
+  # Background gradient.
+  # gradient_start = "DeepSkyBlue"
+  # gradient_end = "SkyBlue"
+  
+  # Background image.
+  image = "roof-4.JPG"  
+  # Name of image in `static/img/`.
+  image_darken = 0
+  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+
+  # Text color (true=light or false=dark).
+  text_color_light = false
+
+
+
+
+
+
 +++

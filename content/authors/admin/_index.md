@@ -1,7 +1,7 @@
 ---
 # Display name
-name: Michael Vahn
-avatar_image: "user-full.png"
+name: Antoine Verhulst
+avatar_image: "Antoine_Verhulst_Serious.JPG"
 # Username (this should match the folder name)
 authors:
 - admin
@@ -14,35 +14,35 @@ btn:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Data Analyst
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: BlaBlaCar Daily
+  url: "https://blablacardaily.com/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include urban mobility, data science and impact of technology.
 
 # Should the user's education and interests be displayed?
 display_education: false
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
+- Urban Mobility
+- Data Science
 - Information Retrieval
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Research Master in Econometrics
+    institution: Université Libre de Bruxelles
+    year: 2018
+  - course: BSc in Business Engineering, specialization in Quantitative Methods
+    institution: Université Catholique de Louvain
+    year: 2016
+  - course: BSc in Business Engineering
+    institution: Université Catholique de Louvain
+    year: 2014
 
 # Social/academia Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -52,12 +52,12 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
+- icon: linkedin
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://www.linkedin.com/in/antoine-verhulst/
+- icon: medium
+  icon_pack: fab
+  link: https://antoine-verhulst.medium.com/
 - icon: github
   icon_pack: fab
   link: https://github.com/gcushen
@@ -77,8 +77,11 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm a data analyst at BlaBlaCar, the shared travel app and one of the most successful french startup. 
+
+I work at BlaBlaCar Daily, a new application created in 2017 to promote carpooling for commuters. 
+
+I've joined the team in 2019 to supervise the data management of the app. I oversee the data warehouse and the ETL's of the application, I'm maintaining the dashboards and daily reports to support the decision-making and I'm building deep analysis to understand our activity. In parralel, I've built several simple machine learning tools to improve our processes.
 
 ![reviews](../../img/certifacates.jpg)
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum. The point of using Lorem Ipsum. distracted by the readable content of a page.
