@@ -95,9 +95,7 @@ gallery_item:
 
 academia comes with **day (light) and night (dark) mode** built-in. Click the sun/moon icon in the top right of the [Demo](https://academia-demo.netlify.com/) to see it in action!
 
-Choose a stunning color and font theme for your site. Themes are fully customizable and include:
-
-{{< gallery >}}
+Choose a stunning color and font theme for your site. Themes are fully customizable.
 
 ## Ecosystem
 
