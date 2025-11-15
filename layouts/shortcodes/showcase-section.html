@@ -1,0 +1,23 @@
+{{/*
+  showcase-section: A shortcode for the portfolio/showcase section
+  Parameters:
+  - id: HTML id for the section
+  - title: Section title
+*/}}
+{{ $sectionId := .Get "id" | default "showcase" }}
+{{ $title := .Get "title" | default "" }}
+
+<section id="{{ $sectionId }}" class="section section--showcase section--border-bottom rad-animation-group section--padding">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                {{ if $title }}
+                <h2 class="section__title">{{ $title }}</h2>
+                {{ end }}
+                <div class="showcase-section__content">
+                    {{ .Inner | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

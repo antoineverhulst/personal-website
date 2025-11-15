@@ -1,0 +1,28 @@
+{{/*
+  intro-section: A shortcode for the intro/hero section
+  Parameters:
+  - id: HTML id for the section
+  - title: Section title
+  - subtitle: Section subtitle
+*/}}
+{{ $sectionId := .Get "id" | default "intro" }}
+{{ $title := .Get "title" | default "" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+
+<section id="{{ $sectionId }}" class="section section--intro section--border-bottom rad-animation-group section--padding">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12 text-center">
+                {{ if $title }}
+                <h1 class="section__title section__title--large">{{ $title }}</h1>
+                {{ end }}
+                {{ if $subtitle }}
+                <p class="section__subtitle">{{ $subtitle }}</p>
+                {{ end }}
+                <div class="intro-section__content">
+                    {{ .Inner | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
