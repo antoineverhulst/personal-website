@@ -15,10 +15,17 @@ enableRobotsTXT = true
   description = "Software Developer & Technical Writer | Open Source Enthusiast"
   keywords = ["portfolio", "blog", "developer"]
 
+  # Home page profile
+  name = "Antoine Verhulst"
+  bio = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
+
+  # Main sections to show on homepage
+  mainSections = ["post"]
+
 [menu]
   [[menu.main]]
     name = "Posts"
-    url = "/posts/"
+    url = "/post/"
     weight = 1
   
   [[menu.main]]
