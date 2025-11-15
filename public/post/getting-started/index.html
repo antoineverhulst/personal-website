@@ -1,0 +1,256 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>academia: the website builder for Hugo - Antoine Verhulst</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Create a beautifully simple website in under 10 minutes." />
+  <meta name="author" content="Antoine Verhulst" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.152.2">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://localhost:1313/"
+      >Antoine Verhulst</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  ><nav
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+    ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#about"
+        >Home</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#posts"
+        >Posts</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#projects"
+        >Projects</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#publications"
+        >Publications</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="courses/"
+        >Courses</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#contact"
+        >Contact</a
+      ><a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="#"
+        >dropdown</a
+      ></nav><nav
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+    >
+      <a
+        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/"
+        target="_blank"
+        rel="me"
+      >twitter</a>
+    </nav>
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">academia: the website builder for Hugo</h1><div class="text-xs antialiased opacity-60"><time>Apr 20, 2016</time></div></header>
+
+  <section><p><strong>Create a free website with academia using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 <em>widgets</em>, <em>themes</em>, and <em>language packs</em> included!</strong></p>
+<p><a href="https://academia-demo.netlify.com/">Check out the latest <strong>demo</strong></a> of what you&rsquo;ll get in less than 10 minutes, or <a href="https://sourcethemes.com/academic/#expo">view the <strong>showcase</strong></a> of personal, project, and business sites.</p>
+<ul>
+<li><a href="/post/getting-started/#install"><strong>Setup academia</strong></a></li>
+<li><a href="https://sourcethemes.com/academic/docs/get-started/"><strong>Get Started</strong></a></li>
+<li><a href="https://sourcethemes.com/academic/docs/">View the documentation</a></li>
+<li><a href="http://discuss.gohugo.io/">Ask a question</a></li>
+<li><a href="https://github.com/gcushen/hugo-academia/issues">Request a feature or report a bug</a></li>
+<li>Updating? View the <a href="https://sourcethemes.com/academic/docs/update/">Update Guide</a> and <a href="https://sourcethemes.com/academic/updates/">Release Notes</a></li>
+<li>Support development of academia:
+<ul>
+<li><a href="https://paypal.me/cushen">Donate a coffee</a></li>
+<li><a href="https://www.patreon.com/cushen">Become a backer on Patreon</a></li>
+<li><a href="https://www.redbubble.com/people/neutreno/works/34387919-academia">Decorate your laptop or journal with an academia sticker</a></li>
+<li><a href="https://academia.threadless.com/">Wear the T-shirt</a></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://github.com/gcushen/hugo-academia/"><img src="https://raw.githubusercontent.com/gcushen/hugo-academia/master/academia.png" alt="Screenshot"></a></p>
+<p><strong>Key features:</strong></p>
+<ul>
+<li><strong>Page builder</strong> - Create <em>anything</em> with <a href="https://sourcethemes.com/academic/docs/page-builder/"><strong>widgets</strong></a> and <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/"><strong>elements</strong></a></li>
+<li><strong>Edit any type of content</strong> - Blog posts, publications, talks, slides, projects, and more!</li>
+<li><strong>Create content</strong> in <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/"><strong>Markdown</strong></a>, <a href="https://sourcethemes.com/academic/docs/jupyter/"><strong>Jupyter</strong></a>, or <a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio"><strong>RStudio</strong></a></li>
+<li><strong>Plugin System</strong> - Fully customizable <a href="https://sourcethemes.com/academic/themes/"><strong>color</strong> and <strong>font themes</strong></a></li>
+<li><strong>Display Code and Math</strong> - Code highlighting and <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math</a> supported</li>
+<li><strong>Integrations</strong> - <a href="https://analytics.google.com">Google Analytics</a>, <a href="https://disqus.com">Disqus commenting</a>, Maps, Contact Forms, and more!</li>
+<li><strong>Beautiful Site</strong> - Simple and refreshing one page design</li>
+<li><strong>Industry-Leading SEO</strong> - Help get your website found on search engines and social media</li>
+<li><strong>Media Galleries</strong> - Display your images and videos with captions in a customizable gallery</li>
+<li><strong>Mobile Friendly</strong> - Look amazing on every screen with a mobile friendly version of your site</li>
+<li><strong>Multi-language</strong> - 15+ language packs including English, 中文, and Português</li>
+<li><strong>Multi-user</strong> - Each author gets their own profile page</li>
+<li><strong>Privacy Pack</strong> - Assists with GDPR</li>
+<li><strong>Stand Out</strong> - Bring your site to life with animation, parallax backgrounds, and scroll effects</li>
+<li><strong>One-Click Deployment</strong> - No servers. No databases. Only files.</li>
+</ul>
+<h2 id="color-themes">Color Themes</h2>
+<p>academia comes with <strong>day (light) and night (dark) mode</strong> built-in. Click the sun/moon icon in the top right of the <a href="https://academia-demo.netlify.com/">Demo</a> to see it in action!</p>
+<p>Choose a stunning color and font theme for your site. Themes are fully customizable.</p>
+<h2 id="ecosystem">Ecosystem</h2>
+<ul>
+<li><strong><a href="https://github.com/sourcethemes/academia-admin">academia Admin</a>:</strong> An admin tool to import publications from BibTeX or import assets for an offline site</li>
+<li><strong><a href="https://github.com/sourcethemes/academia-scripts">academia Scripts</a>:</strong> Scripts to help migrate content to new versions of academia</li>
+</ul>
+<h2 id="install">Install</h2>
+<p>You can choose from one of the following four methods to install:</p>
+<ul>
+<li><a href="https://sourcethemes.com/academic/docs/install/#install-with-web-browser"><strong>one-click install using your web browser (recommended)</strong></a></li>
+<li><a href="https://sourcethemes.com/academic/docs/install/#install-with-git">install on your computer using <strong>Git</strong> with the Command Prompt/Terminal app</a></li>
+<li><a href="https://sourcethemes.com/academic/docs/install/#install-with-zip">install on your computer by downloading the <strong>ZIP files</strong></a></li>
+<li><a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio">install on your computer with <strong>RStudio</strong></a></li>
+</ul>
+<p>Then <a href="https://sourcethemes.com/academic/docs/get-started/">personalize and deploy your new site</a>.</p>
+<h2 id="updating">Updating</h2>
+<p><a href="https://sourcethemes.com/academic/docs/update/">View the Update Guide</a>.</p>
+<p>Feel free to <em>star</em> the project on <a href="https://github.com/gcushen/hugo-academia/">Github</a> to help keep track of <a href="https://sourcethemes.com/academic/updates">updates</a>.</p>
+<h2 id="license">License</h2>
+<p>Copyright 2016-present <a href="https://georgecushen.com">George Cushen</a>.</p>
+<p>Released under the <a href="https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md">MIT</a> license.</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/academia"
+      >academia</a
+    ></footer></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">Copyright &amp;copy; {year}</div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>
