@@ -1,0 +1,23 @@
+{{/*
+  about-section: A shortcode for the about section
+  Parameters:
+  - id: HTML id for the section
+  - title: Section title
+*/}}
+{{ $sectionId := .Get "id" | default "about" }}
+{{ $title := .Get "title" | default "" }}
+
+<section id="{{ $sectionId }}" class="section section--about section--border-bottom rad-animation-group section--padding">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                {{ if $title }}
+                <h2 class="section__title">{{ $title }}</h2>
+                {{ end }}
+                <div class="about-section__content">
+                    {{ .Inner | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
