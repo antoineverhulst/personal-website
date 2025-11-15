@@ -19,6 +19,9 @@ enableRobotsTXT = true
   name = "Antoine Verhulst"
   bio = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
 
+  # Main sections to show on homepage
+  mainSections = ["post"]
+
 [menu]
   [[menu.main]]
     name = "Posts"
