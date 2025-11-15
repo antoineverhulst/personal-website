@@ -1,39 +1,120 @@
 baseURL = "https://antoineverhulst.com/"
 languageCode = "en-us"
 title = "Antoine Verhulst"
-theme = "paper"
+theme = "adritian"
 enableRobotsTXT = true
+
+[module]
+[[module.mounts]]
+  source = "node_modules/bootstrap/scss"
+  target = "assets/scss/bootstrap"
+
+[[module.mounts]]
+  source = "node_modules/bootstrap/dist/js"
+  target = "assets/js/bootstrap"
+
+[[module.mounts]]
+  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  target = "assets/js/vendor/bootstrap.bundle.min.js"
+
+[[module.mounts]]
+  source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
+  target = "assets/css/bootstrap-print.css"
 
 [pagination]
   pagerSize = 10
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
 
 [params]
+  title = "Antoine Verhulst - Data Analyst & Data Science Enthusiast"
+  description = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
   author = "Antoine Verhulst"
-  description = "Software Developer & Technical Writer | Open Source Enthusiast"
-  keywords = ["portfolio", "blog", "developer"]
+  keywords = ["data science", "data analyst", "portfolio", "blog", "urban mobility"]
 
-  # Home page profile
-  name = "Antoine Verhulst"
-  bio = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
+  # Home page settings
+  homepageExperienceCount = 6
+  mainSections = ["blog"]
+  sections = ["intro", "about", "portfolio", "contact"]
 
-  # Main sections to show on homepage
-  mainSections = ["post"]
+[params.blog]
+  layout = "sidebar-right"
+  sidebarWidth = "25"
+  narrowContent = true
+  showCategories = true
+  showRecentPosts = true
+  recentPostCount = 5
+  listStyle = "summary"
 
-[menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "/post/"
+[params.colorTheme.selector.disable]
+  footer = false
+  header = false
+  mobileHeader = false
+
+# Plugins
+[params.plugins]
+
+# CSS Plugins
+[[params.plugins.css]]
+  URL = "css/custom.css"
+
+# SCSS Plugins
+[[params.plugins.scss]]
+  URL = "scss/adritian.scss"
+
+[build]
+  writeStats = true
+
+[build.buildStats]
+  enabledFor = ["scss"]
+  disableClasses = false
+  disableIDs = false
+  disableTags = false
+  enable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    lineNos = false
+    style = "github"
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Antoine Verhulst'
+    weight = 0
+
+[languages.en.menus]
+  [[languages.en.menus.header]]
+    name = "Home"
+    URL = "/"
     weight = 1
-  
-  [[menu.main]]
-    name = "Portfolio"
-    url = "/portfolio/"
-    weight = 2
-  
-  [[menu.main]]
+
+  [[languages.en.menus.header]]
     name = "About"
-    url = "/about/"
+    URL = "#about"
+    weight = 2
+
+  [[languages.en.menus.header]]
+    name = "Blog"
+    URL = "/blog"
     weight = 3
+
+  [[languages.en.menus.header]]
+    name = "Portfolio"
+    URL = "#portfolio"
+    weight = 4
+
+  [[languages.en.menus.header]]
+    pre = "email"
+    name = "Contact"
+    URL = "#contact"
+    weight = 5
