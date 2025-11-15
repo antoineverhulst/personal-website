@@ -1,10 +1,11 @@
 ---
-title: "About"
+title: "About Me"
 date: 2025-11-15
 draft: false
+description: "Data Analyst at BlaBlaCar Daily specializing in urban mobility and data science"
 ---
 
-# Antoine Verhulst
+# About Me
 
 **Data Analyst** at BlaBlaCar Daily
 
