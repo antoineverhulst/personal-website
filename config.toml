@@ -84,6 +84,11 @@ enableRobotsTXT = true
     lineNos = false
     style = "github"
 
+[taxonomies]
+  tag = "tags"
+  category = "category"
+  skill = "skills"
+
 [languages]
   [languages.en]
     disabled = false
@@ -105,17 +110,42 @@ enableRobotsTXT = true
     weight = 2
 
   [[languages.en.menus.header]]
-    name = "Blog"
-    URL = "/blog"
+    name = "Experience"
+    URL = "/experience"
     weight = 3
 
   [[languages.en.menus.header]]
     name = "Portfolio"
-    URL = "#portfolio"
+    URL = "/client-and-work"
     weight = 4
+
+  [[languages.en.menus.header]]
+    name = "Blog"
+    URL = "/blog"
+    weight = 5
 
   [[languages.en.menus.header]]
     pre = "email"
     name = "Contact"
     URL = "#contact"
-    weight = 5
+    weight = 6
+
+  [[languages.en.menus.footer]]
+    name = "Experience"
+    URL = "/experience"
+    weight = 1
+
+  [[languages.en.menus.footer]]
+    name = "Education"
+    URL = "/education"
+    weight = 2
+
+  [[languages.en.menus.footer]]
+    name = "Portfolio"
+    URL = "/client-and-work"
+    weight = 3
+
+  [[languages.en.menus.footer]]
+    name = "Blog"
+    URL = "/blog"
+    weight = 4

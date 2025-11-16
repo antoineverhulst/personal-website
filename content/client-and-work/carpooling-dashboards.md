@@ -2,6 +2,9 @@
 title: "Data Infrastructure for Mobility Authorities"
 date: "2025-11-10"
 draft: false
+featured: true
+type: "Product"
+category: ["Data Product", "Public Policy"]
 tags:
 - Data Engineering
 - Public Policy
@@ -9,6 +12,10 @@ tags:
 - Transportation
 - BigQuery
 summary: Development of automated dashboards for regional authorities to track carpooling subsidy effectiveness.
+skills: ["BigQuery", "Tableau", "Looker Studio", "SQL", "dbt", "Python", "Airflow", "QGIS"]
+impact: "Enabled data-driven management of carpooling subsidy programs across multiple French regions"
+role: "Lead Data Engineer & Product Designer"
+weight: 3
 ---
 
 # Data Infrastructure for Mobility Authorities

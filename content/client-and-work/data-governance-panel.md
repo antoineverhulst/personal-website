@@ -2,12 +2,19 @@
 title: "Paris Dauphine Panel - Data Governance in Transport"
 date: "2025-11-12"
 draft: false
+featured: true
+type: "Public Speaking"
+category: ["Panel Discussion", "Academia"]
 tags:
 - Public Speaking
 - Data Governance
 - Transportation
 - Public Policy
 summary: Panel participation on data sharing regimes for value-added transport services at Paris Dauphine University.
+role: "Panelist - Industry Expert"
+institution: "Paris Dauphine University - Governance and Regulation Chair"
+topic: "What data sharing regime for value-added transport services?"
+weight: 4
 ---
 
 # Data Governance in Transport Services

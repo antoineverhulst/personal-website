@@ -2,6 +2,9 @@
 title: "DecodeTech - Technology & Society Blog"
 date: "2025-11-13"
 draft: false
+featured: false
+type: "Writing"
+category: ["Content Creation", "Public Engagement"]
 tags:
 - Writing
 - Technology
@@ -9,6 +12,10 @@ tags:
 - Urban Planning
 - AI
 summary: Co-founder and author of DecodeTech, an information blog exploring technology's impact on society through practitioner insights.
+role: "Co-founder & Author"
+skills: ["Writing", "Technology Analysis", "Public Communication"]
+featured_article: "Artificial Intelligence and the City - A Parking Story"
+weight: 5
 ---
 
 # DecodeTech: Technology & Society

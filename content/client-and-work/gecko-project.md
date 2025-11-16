@@ -2,12 +2,19 @@
 title: "GECKO Project - New Mobility Governance"
 date: "2025-11-14"
 draft: false
+featured: true
+type: "Research"
+category: ["Public Policy", "Research Collaboration"]
 tags:
 - Research
 - EU Horizon 2020
 - Mobility Governance
 - Public Policy
 summary: Contribution to the European Horizon 2020 research project on governance of new mobility services.
+role: "Industry Contributor"
+skills: ["Policy Analysis", "Data Governance", "Stakeholder Engagement"]
+external_link: ""
+weight: 2
 ---
 
 # GECKO Project: New Mobility Governance

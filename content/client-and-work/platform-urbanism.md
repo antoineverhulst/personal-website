@@ -2,12 +2,19 @@
 title: "Platform Urbanism Research"
 date: "2025-11-15"
 draft: false
+featured: true
+type: "Research"
+category: ["Academic Research", "Transportation Economics"]
 tags:
 - Research
 - Urban Economics
 - Platform Economics
 - Transportation
 summary: Academic research on subsidizing network effects in carpooling platforms in France, published in the Handbook of Platform Urbanism.
+skills: ["Econometrics", "Platform Economics", "Data Analysis", "Academic Writing"]
+publication: "Handbook of Platform Urbanism, Vrije Universiteit Brussel"
+status: "forthcoming"
+weight: 1
 ---
 
 # Platform Urbanism Research
