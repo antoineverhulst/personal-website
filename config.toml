@@ -30,10 +30,11 @@ enableRobotsTXT = true
   section = ["HTML", "RSS"]
 
 [params]
-  title = "Antoine Verhulst - Data Analyst & Data Science Enthusiast"
-  description = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
+  title = "Antoine Verhulst - Data and Product Expert"
+  description = "Data Product Owner at BlaBlaCar | Data Strategy, Product Development & Public Policy"
   author = "Antoine Verhulst"
-  keywords = ["data science", "data analyst", "portfolio", "blog", "urban mobility"]
+  keywords = ["data science", "data product", "product owner", "urban mobility", "transportation economics", "public policy", "data strategy"]
+  profileImage = "/img/profile.jpg"
 
   # Home page settings
   homepageExperienceCount = 6
@@ -83,6 +84,11 @@ enableRobotsTXT = true
     lineNos = false
     style = "github"
 
+[taxonomies]
+  tag = "tags"
+  category = "category"
+  skill = "skills"
+
 [languages]
   [languages.en]
     disabled = false
@@ -104,17 +110,42 @@ enableRobotsTXT = true
     weight = 2
 
   [[languages.en.menus.header]]
-    name = "Blog"
-    URL = "/blog"
+    name = "Experience"
+    URL = "/experience"
     weight = 3
 
   [[languages.en.menus.header]]
     name = "Portfolio"
-    URL = "#portfolio"
+    URL = "/client-and-work"
     weight = 4
+
+  [[languages.en.menus.header]]
+    name = "Blog"
+    URL = "/blog"
+    weight = 5
 
   [[languages.en.menus.header]]
     pre = "email"
     name = "Contact"
     URL = "#contact"
-    weight = 5
+    weight = 6
+
+  [[languages.en.menus.footer]]
+    name = "Experience"
+    URL = "/experience"
+    weight = 1
+
+  [[languages.en.menus.footer]]
+    name = "Education"
+    URL = "/education"
+    weight = 2
+
+  [[languages.en.menus.footer]]
+    name = "Portfolio"
+    URL = "/client-and-work"
+    weight = 3
+
+  [[languages.en.menus.footer]]
+    name = "Blog"
+    URL = "/blog"
+    weight = 4
