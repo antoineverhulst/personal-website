@@ -30,10 +30,11 @@ enableRobotsTXT = true
   section = ["HTML", "RSS"]
 
 [params]
-  title = "Antoine Verhulst - Data Analyst & Data Science Enthusiast"
-  description = "Data Analyst at BlaBlaCar Daily | Data Science & Urban Mobility"
+  title = "Antoine Verhulst - Data and Product Expert"
+  description = "Data Product Owner at BlaBlaCar | Data Strategy, Product Development & Public Policy"
   author = "Antoine Verhulst"
-  keywords = ["data science", "data analyst", "portfolio", "blog", "urban mobility"]
+  keywords = ["data science", "data product", "product owner", "urban mobility", "transportation economics", "public policy", "data strategy"]
+  profileImage = "/img/profile.jpg"
 
   # Home page settings
   homepageExperienceCount = 6
