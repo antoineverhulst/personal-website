@@ -18,3 +18,13 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Old theme backups
+themes/academia-hugo.old/
+themes/paper.old/
+
+# Documentation and specification files
+*.md.old
+*.old/
+CLAUDE_CODE_INSTRUCTIONS.md
+Website Specification Antoine Verhulst v2.md
