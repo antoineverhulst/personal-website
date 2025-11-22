@@ -1,0 +1,194 @@
+{{ define "main" }}
+<div class="home-page">
+  <div class="container">
+
+    <!-- Hero Section: Profile + Introduction -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+          <img src="/images/Antoine Verhulst - Photo.jpeg" alt="Antoine Verhulst - Product Manager & Data Expert">
+        </div>
+
+        <!-- Introduction Text -->
+        <div class="intro-text">
+          <h1>Hi, I'm Antoine Verhulst</h1>
+          <h2 class="subtitle">Product Manager & Data Expert</h2>
+          <p class="bio">
+            As a data strategy expert, I combine technical expertise and strategic vision to design data and AI products for the transportation sector. My goal is to apply this dual skill set to the design of efficient and equitable mobility solutions. As Product Data Owner, I lead teams to define strategies aligned with business challenges to facilitate decision-making and increase user autonomy and impact. My dual background in business engineering and econometrics research allows me to bridge the gap between technical challenges and socio-economic objectives.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Highlights: Badges -->
+    <section class="highlights-section">
+      <div class="badges-container">
+        <span class="badge">Full Stack Data Analyst</span>
+        <span class="badge">Product Owner Data/IA</span>
+        <span class="badge">Contributor & Author</span>
+      </div>
+    </section>
+
+    <!-- Quick Navigation Cards -->
+    <section class="quick-nav-section">
+      <div class="nav-cards-grid">
+        <a href="/experience/" class="nav-card">Experience</a>
+        <a href="/portfolio/" class="nav-card">Portfolio</a>
+        <a href="/articles/" class="nav-card">Articles</a>
+        <a href="mailto:antoineverhulst18@gmail.com" class="nav-card">Get in Touch</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<style>
+/* Home Page Specific Styles */
+.home-page {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Profile Picture */
+.profile-picture {
+  flex: 0 0 250px;
+}
+
+.profile-picture img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: var(--shadow-card);
+}
+
+/* Introduction Text */
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.intro-text .subtitle {
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.intro-text .bio {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
+/* Highlights Section */
+.highlights-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+/* Quick Navigation Section */
+.quick-nav-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.nav-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* Tablet Responsive (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .hero-content {
+    gap: 40px;
+  }
+
+  .profile-picture {
+    flex: 0 0 200px;
+  }
+
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .intro-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro-text .subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile Responsive (0px - 767px) */
+@media screen and (max-width: 767px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .profile-picture {
+    flex: none;
+    margin: 0 auto;
+  }
+
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .badges-container {
+    gap: 12px;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .nav-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+</style>
+{{ end }}

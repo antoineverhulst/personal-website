@@ -1,0 +1,97 @@
+careers:
+  - company: "BlaBlaCar"
+    position: "Data Product Owner"
+    location: "Paris"
+    start_date: "September 2024"
+    end_date: "Present"
+    description:
+      - "Product Owner of a team of 10 data experts"
+      - "Definition of team roadmap and performance indicators"
+      - "Management and prioritization of business needs"
+      - "Creation of technical specifications for solutions developed by the team"
+      - "Leading data strategy for Client Relations, developing infrastructure (data warehouse, pipelines) to analyze over 100k messages per month to improve user service"
+    skills:
+      - "Product Management"
+      - "Data Strategy"
+      - "Team Leadership"
+      - "Roadmap Planning"
+      - "Stakeholder Management"
+
+  - company: "BlaBlaCar"
+    position: "Data Analyst"
+    location: "Paris"
+    start_date: "October 2019"
+    end_date: "September 2024"
+    description:
+      - "Management of BlaBlaCar Daily application data warehouse"
+      - "Design and deployment of automated dashboards for Autorités Organisatrices des Mobilités (AOM) and Regions, enabling precise monitoring of carpooling subsidy policy effectiveness"
+      - "User data analysis to support product, strategic, marketing and territorial decision-making"
+      - "Management of data and technical projects, such as deployment of new pricing grids, tracking matching processes, and integration of 2 different data warehouses following Klaxit app integration"
+      - "Implementation of automated tools and Data Science models for fraud detection and search results management"
+    skills:
+      - "BigQuery"
+      - "SQL"
+      - "Tableau"
+      - "Data Warehouse"
+      - "Python"
+      - "Data Analysis"
+
+  - company: "Meep"
+    position: "Data Analyst"
+    location: "Madrid"
+    start_date: "February 2019"
+    end_date: "October 2019"
+    description:
+      - "In charge of setting up data infrastructure for a Mobility as a Service application"
+      - "Integration of databases (Firebase and PostgreSQL) using Google BigQuery and data visualizations using Data Studio and Power BI"
+      - "Definition of indicators and collaboration with design, development and management teams to track activity and improve user experience in multimodality"
+      - "Visualizations and analyses for fleet management"
+    skills:
+      - "BigQuery"
+      - "Firebase"
+      - "PostgreSQL"
+      - "Power BI"
+      - "Data Studio"
+
+  - company: "Digital Demand"
+    position: "Data Analyst Intern"
+    location: "Madrid"
+    start_date: "November 2018"
+    end_date: "January 2019"
+    description:
+      - "Management and analysis of qualitative survey data on Andorra's territorial marketing strategy, from questionnaire creation to analysis report"
+      - "Creation of dashboards using SQL-powered programs"
+    skills:
+      - "SQL"
+      - "Survey Analysis"
+      - "Data Visualization"
+
+  - company: "Dalberg Data Insight"
+    position: "Data Analyst Intern"
+    location: "Brussels"
+    start_date: "August 2017"
+    end_date: "October 2017"
+    description:
+      - "Creation of dashboards using Tableau, including data mapping via QGIS and Mapbox, for public transport network development"
+      - "Processing mobile phone datasets to generate usable datasets"
+      - "Delivery of reports to Transport ministries and public development bank officials"
+      - "Analysis of Autolib charging stations for Paris City Hall"
+    skills:
+      - "Tableau"
+      - "QGIS"
+      - "Mapbox"
+      - "Geospatial Analysis"
+
+  - company: "Carnegie Europe"
+    position: "Development Intern"
+    location: "Brussels"
+    start_date: "January 2016"
+    end_date: "April 2016"
+    description:
+      - "Writing reports on international policy"
+      - "Responding to calls for tender"
+      - "Preparation of conferences and seminars"
+    skills:
+      - "Policy Analysis"
+      - "Research"
+      - "Event Management"

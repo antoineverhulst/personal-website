@@ -1,0 +1,21 @@
+degrees:
+  - institution: "Université Libre de Bruxelles"
+    degree: "Research Master in Economics"
+    location: "Brussels"
+    start_date: "September 2016"
+    end_date: "August 2018"
+    description: "Specialization in Transport and Environmental Economics (KU Leuven)"
+
+  - institution: "Université Catholique de Louvain"
+    degree: "Master in Business Engineering"
+    location: "Louvain-la-Neuve"
+    start_date: "September 2014"
+    end_date: "August 2016"
+    description: "Exchange at Queen's University, Canada. Specialization in quantitative methods and international finance"
+
+  - institution: "Université Catholique de Louvain"
+    degree: "Bachelor in Business Engineering"
+    location: "Louvain-la-Neuve"
+    start_date: "September 2011"
+    end_date: "August 2014"
+    description: ""

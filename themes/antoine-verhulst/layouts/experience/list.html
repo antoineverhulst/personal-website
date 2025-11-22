@@ -1,0 +1,147 @@
+{{ define "main" }}
+<div class="experience-page">
+  <div class="container">
+
+    <!-- Page Title -->
+    <h1 class="page-title">Experience & Skills</h1>
+
+    <!-- Careers Section -->
+    <section class="careers-section">
+      <h2 class="section-header">Careers</h2>
+
+      <div class="timeline">
+        {{ range .Site.Data.experience.careers }}
+        <div class="timeline-item">
+          <div class="timeline-company">{{ .company }}</div>
+          <div class="timeline-position">{{ .position }}</div>
+          <div class="timeline-date">{{ .start_date }} - {{ .end_date }}</div>
+
+          <div class="timeline-description">
+            <ul>
+              {{ range .description }}
+              <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+
+          {{ if .skills }}
+          <div class="timeline-skills">
+            <div class="timeline-skills-label">Skills:</div>
+            {{ range .skills }}
+            <span class="timeline-skill-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section">
+      <h2 class="section-header">Education</h2>
+
+      <!-- Degrees -->
+      {{ range .Site.Data.education.degrees }}
+      <div class="timeline-item">
+        <div class="timeline-company">{{ .institution }}</div>
+        <div class="timeline-position">{{ .degree }}</div>
+        <div class="timeline-date">{{ .start_date }} - {{ .end_date }}</div>
+        {{ if .description }}
+        <div class="timeline-description">
+          <p>{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+      <h2 class="section-header">Certifications</h2>
+
+      <!-- Certifications -->
+      {{ range .Site.Data.certifications.certifications }}
+      <div class="timeline-item">
+        <div class="timeline-company">{{ .organization }}</div>
+        <div class="timeline-position">{{ .name }}</div>
+        {{ if .date }}
+        <div class="timeline-date">{{ .date }}</div>
+        {{ end }}
+        {{ if .url }}
+        <div class="timeline-description">
+          <p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">View Credentials</a></p>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+
+    <!-- Key Skills Section -->
+    <section class="skills-section">
+      <h2 class="section-header">Key Skills</h2>
+
+      <div class="skills-container">
+        {{ range .Site.Data.skills.categories }}
+          {{ if ne .name "Languages" }}
+            {{ range .skills }}
+            <span class="skill-badge">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
+      <h2 class="section-header">Languages</h2>
+
+      <div class="skills-container">
+        {{ range .Site.Data.skills.categories }}
+          {{ if eq .name "Languages" }}
+            {{ range .skills }}
+            <span class="skill-badge">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<style>
+/* Experience Page Specific Styles */
+.experience-page {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.page-title {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+}
+
+.careers-section,
+.education-section,
+.skills-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 767px) {
+  .page-title {
+    font-size: 2rem;
+  }
+}
+</style>
+{{ end }}

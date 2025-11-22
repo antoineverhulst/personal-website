@@ -1,0 +1,85 @@
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p class="footer-copyright">&copy; 2025 Antoine Verhulst. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://github.com/antoineverhulst" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/antoine-verhulst" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+      <a href="mailto:antoineverhulst18@gmail.com" class="footer-link">Email</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* Footer Styles */
+.site-footer {
+  background-color: var(--color-background);
+  border-top: 1px solid var(--color-border);
+  padding: 40px 0;
+  margin-top: var(--spacing-xl);
+}
+
+.footer-container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-desktop);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-link {
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 1023px) {
+  .footer-container {
+    padding: 0 var(--padding-tablet);
+  }
+
+  .footer-right {
+    gap: 25px;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 var(--padding-mobile);
+    gap: 20px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-copyright,
+  .footer-link {
+    font-size: 0.85rem;
+  }
+}
+</style>

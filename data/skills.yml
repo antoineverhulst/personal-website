@@ -1,0 +1,46 @@
+categories:
+  - name: "Programming"
+    skills:
+      - "SQL"
+      - "Python"
+      - "R"
+      - "dbt"
+
+  - name: "Data Visualization"
+    skills:
+      - "Tableau"
+      - "Looker Studio"
+      - "Power BI"
+      - "Plotly"
+      - "Matplotlib"
+
+  - name: "Data Warehouse"
+    skills:
+      - "BigQuery"
+      - "Airflow"
+      - "dbt"
+
+  - name: "Geomatics"
+    skills:
+      - "QGIS"
+      - "Geopandas"
+      - "BigQuery GIS"
+
+  - name: "Product"
+    skills:
+      - "Product Management"
+      - "Scrum"
+      - "Agile"
+
+  - name: "Tools"
+    skills:
+      - "Microsoft Office"
+      - "Google Suite"
+
+  - name: "Languages"
+    skills:
+      - "French (Native)"
+      - "English (Fluent)"
+      - "Spanish (Advanced)"
+      - "Dutch (Intermediate)"
+      - "German (Beginner)"

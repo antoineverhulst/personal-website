@@ -1,0 +1,42 @@
+certifications:
+  - name: "Professional Scrum Product Owner I"
+    organization: "Scrum.org"
+    url: "https://www.scrum.org/certificates/1116956"
+    date: ""
+    has_credentials: true
+
+  - name: "Numérique, Open Data, Villes/Territoire (UEV241) / Ville Numérique (NCU 221) / Métrologies participatives (UEV245)"
+    organization: "CNAM"
+    url: ""
+    date: ""
+    has_credentials: true
+
+  - name: "Villes et territoires durables. Méthodes et outils pour passer à l'action"
+    organization: "ADEME & CNFPT"
+    url: "https://openbadgefactory.com/obv3/credentials/47333862b9fc736aa9cac80c46ef4bbee09442bd"
+    date: ""
+    has_credentials: true
+
+  - name: "CS50: Introduction to Computer Science"
+    organization: "Harvard"
+    url: "https://cs50.harvard.edu/certificates/9a014a7b-da45-4f4f-b8b3-faebba45645c"
+    date: ""
+    has_credentials: true
+
+  - name: "Spatial Data Science: The New Frontier in Analytics"
+    organization: "ESRI"
+    url: "https://www.esri.com/training/TrainingRecord/Certificate/antoineverhulst18/60b9d1a522066235a9997509/-60"
+    date: ""
+    has_credentials: true
+
+  - name: "Statistical Learning"
+    organization: "Stanford Online (EdX)"
+    url: "https://courses.edx.org/certificates/4b1b6a521640442f80ac6d964436264e"
+    date: ""
+    has_credentials: true
+
+  - name: "Machine Learning with Python"
+    organization: "IBM (Coursera)"
+    url: "https://www.coursera.org/account/accomplishments/certificate/5BW8TU5VXDCJ"
+    date: ""
+    has_credentials: true

@@ -1,0 +1,12 @@
+name = "Antoine Verhulst"
+license = "MIT"
+licenselink = "https://github.com/antoineverhulst/personal-website/blob/main/LICENSE"
+description = "Custom portfolio theme for Antoine Verhulst"
+homepage = "https://antoineverhulst.com/"
+tags = ["portfolio", "personal", "minimal", "responsive"]
+features = ["responsive", "custom-design", "data-driven"]
+min_version = "0.110.0"
+
+[author]
+  name = "Antoine Verhulst"
+  homepage = "https://antoineverhulst.com/"

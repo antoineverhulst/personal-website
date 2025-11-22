@@ -1,0 +1,145 @@
+{{ define "main" }}
+<div class="portfolio-page">
+  <div class="container">
+
+    <!-- Page Title -->
+    <h1 class="page-title">Portfolio</h1>
+
+    <!-- Featured Projects Section -->
+    <section class="projects-section">
+      <h2 class="section-header">Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: heat-risk-france -->
+        <div class="project-card" id="project-heat-risk">
+          <h3 class="project-title">
+            <a href="https://github.com/antoineverhulst/heat-risk-france" target="_blank" rel="noopener noreferrer">heat-risk-france</a>
+          </h3>
+          <a href="https://github.com/antoineverhulst/heat-risk-france" target="_blank" rel="noopener noreferrer" class="project-link">🔗 View on GitHub</a>
+
+          <div class="project-description-label"><strong>Description:</strong></div>
+          <p class="project-description">Geospatial analysis of heat risk in France, combining climate data with urban infrastructure to identify vulnerable areas.</p>
+
+          <div class="project-languages">
+            <strong>Languages:</strong> Python, Jupyter Notebook
+          </div>
+
+          <div class="project-metadata">
+            <span class="project-stars">⭐ <span id="stars-heat">-</span></span>
+            <span class="project-updated">📅 Last Updated: <span id="updated-heat">-</span></span>
+          </div>
+        </div>
+
+        <!-- Project 2: personal-website -->
+        <div class="project-card" id="project-personal">
+          <h3 class="project-title">
+            <a href="https://github.com/antoineverhulst/personal-website" target="_blank" rel="noopener noreferrer">personal-website</a>
+          </h3>
+          <a href="https://github.com/antoineverhulst/personal-website" target="_blank" rel="noopener noreferrer" class="project-link">🔗 View on GitHub</a>
+
+          <div class="project-description-label"><strong>Description:</strong></div>
+          <p class="project-description">Personal portfolio website built with Hugo, showcasing projects, experience, and publications.</p>
+
+          <div class="project-languages">
+            <strong>Languages:</strong> HTML, CSS, JavaScript
+          </div>
+
+          <div class="project-metadata">
+            <span class="project-stars">⭐ <span id="stars-personal">-</span></span>
+            <span class="project-updated">📅 Last Updated: <span id="updated-personal">-</span></span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<style>
+/* Portfolio Page Specific Styles */
+.portfolio-page {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.projects-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.project-description-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  margin-top: var(--spacing-sm);
+}
+
+.project-languages {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin-bottom: 12px;
+  margin-top: var(--spacing-sm);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 767px) {
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .projects-grid {
+    gap: 20px;
+  }
+}
+</style>
+
+<!-- GitHub API Integration Script -->
+<script>
+// Fetch GitHub repository data
+async function fetchGitHubRepo(owner, repo, elementPrefix) {
+  try {
+    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+    const data = await response.json();
+
+    // Update stars
+    const starsElement = document.getElementById(`stars-${elementPrefix}`);
+    if (starsElement) {
+      starsElement.textContent = data.stargazers_count || '0';
+    }
+
+    // Update last updated date
+    const updatedElement = document.getElementById(`updated-${elementPrefix}`);
+    if (updatedElement) {
+      const updatedDate = new Date(data.updated_at);
+      const formattedDate = updatedDate.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      });
+      updatedElement.textContent = formattedDate;
+    }
+  } catch (error) {
+    console.error(`Error fetching repo ${repo}:`, error);
+  }
+}
+
+// Load data when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  fetchGitHubRepo('antoineverhulst', 'heat-risk-france', 'heat');
+  fetchGitHubRepo('antoineverhulst', 'personal-website', 'personal');
+});
+</script>
+{{ end }}
