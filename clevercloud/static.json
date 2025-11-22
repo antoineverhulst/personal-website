@@ -1,0 +1,18 @@
+{
+  "domain": "antoineverhulst.com",
+  "cache_control": {
+    "/": {
+      "max-age": 3600
+    },
+    "/css/*": {
+      "max-age": 31536000
+    },
+    "/images/*": {
+      "max-age": 31536000
+    },
+    "/img/*": {
+      "max-age": 31536000
+    }
+  },
+  "error_page": "/404.html"
+}

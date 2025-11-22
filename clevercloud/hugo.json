@@ -1,0 +1,7 @@
+{
+  "version": "0.152.2",
+  "extended": true,
+  "environment": {
+    "HUGO_ENV": "production"
+  }
+}
