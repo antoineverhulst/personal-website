@@ -63,7 +63,39 @@
           </div>
         </div>
 
-        <!-- Project 2: personal-website -->
+        <!-- Project 2: brussels_loneliness_gwr -->
+        <div class="project-card" id="project-brussels">
+          <h3 class="project-title">
+            <a href="https://github.com/antoineverhulst/brussels_loneliness_gwr" target="_blank" rel="noopener noreferrer">Brussels Loneliness — Spatial Regression Analysis</a>
+          </h3>
+          <a href="https://github.com/antoineverhulst/brussels_loneliness_gwr" target="_blank" rel="noopener noreferrer" class="project-link">🔗 View on GitHub</a>
+
+          <div class="project-description-label"><strong>Description:</strong></div>
+          <p class="project-description">Spatial analysis of single-person household patterns across Brussels' statistical sectors. Combines OLS and Geographically Weighted Regression (GWR) to uncover local socioeconomic drivers of isolation, using open data from the Brussels Monitoring des Quartiers API.</p>
+
+          <div class="project-languages">
+            <strong>Languages:</strong> Python, Jupyter Notebook
+          </div>
+
+          <div class="project-metadata">
+            <span class="project-stars">⭐ <span id="stars-brussels">-</span></span>
+            <span class="project-updated">📅 Last Updated: <span id="updated-brussels">-</span></span>
+          </div>
+        </div>
+
+        <!-- Project 3: laroque-ambition-collective -->
+        <div class="project-card" id="project-laroque">
+          <h3 class="project-title">Laroque-Timbaut 2026 — Citizen Collective Website</h3>
+
+          <div class="project-description-label"><strong>Description:</strong></div>
+          <p class="project-description">Full HTML/CSS website designed and built for a citizen collective ahead of the 2026 French municipal elections. Includes a complete design system (colour palette, typography, responsive components) and a 5-page architecture covering the collective's values, local diagnosis, and civic ambitions.</p>
+
+          <div class="project-languages">
+            <strong>Languages:</strong> HTML, CSS
+          </div>
+        </div>
+
+        <!-- Project 4: personal-website -->
         <div class="project-card" id="project-personal">
           <h3 class="project-title">
             <a href="https://github.com/antoineverhulst/personal-website" target="_blank" rel="noopener noreferrer">personal-website</a>
@@ -207,6 +239,7 @@ async function fetchGitHubRepo(owner, repo, elementPrefix) {
 // Load data when page loads
 document.addEventListener('DOMContentLoaded', function() {
   fetchGitHubRepo('antoineverhulst', 'heat-risk-france', 'heat');
+  fetchGitHubRepo('antoineverhulst', 'brussels_loneliness_gwr', 'brussels');
   fetchGitHubRepo('antoineverhulst', 'personal-website', 'personal');
 });
 </script>
